@@ -1,0 +1,24 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	font-size: 4vh;
+	margin-top: 10vh;
+}
+
+.subheader {
+	font-size: 4vh;
+	color: gray;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.seperator {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
