@@ -1,7 +1,7 @@
 
 #Boardz.css
 
-![Boardz.css](http://i64.tinypic.com/2hhdl47.jpg)
+![Boardz.css](http://i67.tinypic.com/2ib27oz.jpg)
 
 Boardz.css is a simple CSS library that allows to create Pinterest-like card-boards from simple unordered lists with less than 1kB minified file size. [Live demo here.](https://karakanb.github.io/boardz/)
 
