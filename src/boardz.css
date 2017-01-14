@@ -60,23 +60,6 @@
     height: auto;
 }
 
-.center {
-	margin: auto;
-}
-
-.fifty-percent {
-	width: 50%;
-}
-
-.seventyfive-percent {
-	width: 75%;
-}
-
-.hundred-percent {
-	width: 100%;
-}
-
-
 .beautiful li{
 	border: none !important;
     border-radius: 10px;

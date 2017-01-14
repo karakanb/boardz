@@ -7,6 +7,12 @@ p {
 
 }
 
+.available-classes ul{
+	letter-spacing: .01em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
 h2 {
 	font-size: 5vh;
 	font-weight: 400;
@@ -15,7 +21,6 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	font-size: 4vh;
-	margin-top: 10vh;
 }
 
 .subheader {
@@ -32,7 +37,6 @@ h2 {
 	margin-bottom: 5vh;
 }
 
-
 .centered-block {
 	margin: auto;
 }
@@ -43,8 +47,4 @@ h2 {
 
 .seventyfive-percent {
 	width: 75%;
-}
-
-.hundred-percent {
-	width: 100%;
 }
