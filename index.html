@@ -2,16 +2,16 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>Boardz Demo</title>
-	<meta name="description" content="Boardz">
-	<meta name="author" content="karakanb">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="src/boardz.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Boardz Demo</title>
+    <meta name="description" content="Boardz">
+    <meta name="author" content="karakanb">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="src/boardz.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wingcss/0.1.8/wing.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -19,80 +19,357 @@
 </head>
 
 <body>
-	<div class="page-header text-center seventyfive-percent center">
-		<h1 class="center"> boardz.css </h1>
-		<p class="subheader">Create Pinterest-like boards with pure CSS, in less than 750 bytes.
-			<br><br>
-			<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-		</p>
-	</div>
+    <div class="seventyfive-percent centered-block">
+        <div class="page-header text-center">
+            <h1> boardz.css </h1>
+            <p class="subheader">Create Pinterest-like boards with pure CSS, in less than 750 bytes.
+                <br><br>
+                <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            </p>
+        </div>
 
-	<hr class="seventyfive-percent seperator">
-	<div class="text-center">
-		<div class="subheader">Default Example</div>
-	</div>
-	<hr class="seventyfive-percent seperator">
+        <hr class="seperator">
+        
+        <div class="text-center">
+            <h2>What is <strong>Boardz</strong>?</h2>
+            <p><strong>Boardz</strong> is a simple, lightweight and responsive pure CSS library that creates Pinterest-like boards from simple 
+                unordered list elements. The main objective of the Boardz is to give the basic layout of the board with a simple default styling.
+                The library is not made to be a plug-and-use file, it simply gives the layout of the board to the nested <code>&lt;ul&gt;</code> 
+                and <code>&lt;li&gt;</code> elements. It uses the powerful Flexbox model to create and maintain the layout across devices and screens.
+                <br>
+            </p>
+            <h2>How to use it?</h2>
+            <p>In order to use <strong>Boardz</strong>, just wrap your unordered list with a <code>div</code> of class "boardz", then the rest of the list will be styled properly. Think of every unordered list as a column in the board, and the columns will be generated for every unordered list element in your <code>div</code>. <strong>Boards</strong> will also give a basic style to the <code>h1</code> headers in your list elements. The basic structure of a simple board with 2 columns is as follows:<br>
+            </p>
+        </div>
+        
+    
+        <pre>
+            <code>
+&lt;div class="boardz"&gt;
+    &lt;!-- First column --&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;h1&gt; Header 1&lt;/h1&gt;
+            Content
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;h1&gt; Header 2&lt;/h1&gt;
+            Content
+        &lt;/li&gt;
+    &lt;/ul&gt;
 
-	<div class="boardz center seventyfive-percent">
-		<ul class="column">
-			<li>
-				<h1>Ex Nostrud</h1>
-				Lorem ipsum dolor sit amet, et primis ornatus usu, eum ei graeci regione adipiscing. Eu primis nominavi ius, case facete eum at. In per summo sanctus, mea at tamquam nostrud luptatum, alienum convenire per te. Ei vel diceret complectitur. His choro accusam gubergren et.
+    &lt;!-- Second column --&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;h1&gt; Header 1&lt;/h1&gt;
+            Content
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;h1&gt; Header 2&lt;/h1&gt;
+            Content
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+            </code>
+       </pre>
+        
+        <!-- Sample code block -->
+        <div>    
+            <hr class="seperator">
 
-				Cu tale saperet sed. Impetus accusata assentior id vel, tantas admodum mel ad. Sed eruditi sanctus fabellas cu, quas alienum sea ea. Cu vero munere disputationi sed, eruditi offendit his ne. Pri ad dolores laboramus.Vix ut affert civibus petentium, has clita dolorum id, an ius odio alia. An mel elitr scaevola adversarium, nibh dissentias inciderint nec ea. Purto integre ex his. Dolor nonumy docendi ad duo.
-			</li>
+            <!-- Example header and explanation -->
+            <div class="text-center">
+                <h2>Default Boardz</h2>
+                <p>The default view of the Boardz is constructed over the simple structure above.</p>
+            </div>
 
-			<li>
-				<h1>Audire Integre </h1>
-				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-			</li>
+            <hr class="seperator fifty-percent">
 
-			<li>
-				<h1>Vix Clita</h1>
-				I am a simple list AND I am a simple listI am a simple list AND I am a simple listI am a simple list AND I am a simple list
-			</li>
-		</ul>
-		<ul class="column">
-			<li>
-				<h1>Eruditi</h1>
-				Lorem ipsum dolor sit amet, te ius feugait persecuti, eirmod tritani ad pro. Copiosae expetendis per no. Nec no enim solum inermis. Minim insolens instructior ne ius, nulla eruditi eam no. Et quo aeterno persecuti disputando, adhuc accusam sea no, an brute justo debitis quo. At eos ipsum putent.
-			</li>
+            <!-- Example Boardz element. -->
+            <div class="boardz centered-block">
+                <ul>
+                    <li>
+                        <h1>Ex Nostrud</h1>
+                        Lorem ipsum dolor sit amet, et primis ornatus usu, eum ei graeci regione adipiscing. Eu primis nominavi ius, case facete eum at. In per summo sanctus, mea at tamquam nostrud luptatum, alienum convenire per te. Ei vel diceret complectitur. His choro accusam gubergren et.
 
-			<li>
-				<h1>Constituam Adversarium</h1>*
-				Cu simul oratio indoctum nam, cu offendit moderatius mel. Sea eu euismod consulatu, usu cu audiam perpetua, viris philosophia vis et. Cu sit tibique intellegam, error ludus scripta pri et. His congue aliquam iracundia ei. Has idque fastidii id, mucius erroribus vel ad. Ut posse albucius periculis his, duo an dicunt nostrud deleniti.
+                        Cu tale saperet sed. Impetus accusata assentior id vel, tantas admodum mel ad. Sed eruditi sanctus fabellas cu, quas alienum sea ea. Cu vero munere disputationi sed, eruditi offendit his ne. Pri ad dolores laboramus.Vix ut affert civibus petentium, has clita dolorum id, an ius odio alia. An mel elitr scaevola adversarium, nibh dissentias inciderint nec ea. Purto integre ex his. Dolor nonumy docendi ad duo.
+                    </li>
 
-				Modo affert expetenda per ne. Et dolore platonem appellantur cum. Constituam adversarium in sit, mea ne porro vitae, eu pri modus dicam quaeque. At nibh brute sonet sea. Mei simul disputando eu, id vis esse explicari dissentiet, ei agam volutpat usu. Ex vis tollit mollis oportere, mei probatus qualisque te. Mei labore voluptaria ex, mei graeci feugiat definiebas eu.
-			</li>
+                    <li>
+                        <h1>Audire Integre </h1>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Eruditi</h1>
+                        Lorem ipsum dolor sit amet, te ius feugait persecuti, eirmod tritani ad pro. Copiosae expetendis per no. Nec no enim solum inermis. Minim insolens instructior ne ius, nulla eruditi eam no. Et quo aeterno persecuti disputando, adhuc accusam sea no, an brute justo debitis quo. At eos ipsum putent.
+                    </li>
 
-			<li>
-				<h1>Fastidii Electram</h1>
-				Vel adipisci suscipiantur te, nam ullum perfecto ut. Vitae contentiones id sed. Est vitae ponderum facilisis in. Quo illud eligendi similique et, odio detraxit pertinacia ea vix.
-			</li>
-		</ul>
-		<ul class="column">
-			<li>
-				<h1>Mea Ludico</h1>
-				Cetero perpetua ius at, et feugait nostrum sit, mea ne quaeque fastidii electram. Delenit torquatos adipiscing vix ex. Viris tamquam postulant ei mel, ea singulis corrumpit democritum vim. No fierent salutatus vel, in persecuti vituperata eos, at nusquam perpetua hendrerit est. Ne pri odio option nusquam, sed natum admodum eleifend at. Sea putant malorum scripserit ut, ei duo prima eleifend, ea mea agam diceret inciderint.
-			</li>
+                    <li>
+                        <h1>Constituam Adversarium</h1>*
+                        Cu simul oratio indoctum nam, cu offendit moderatius mel. Sea eu euismod consulatu, usu cu audiam perpetua, viris philosophia vis et. Cu sit tibique intellegam, error ludus scripta pri et. His congue aliquam iracundia ei. Has idque fastidii id, mucius erroribus vel ad. Ut posse albucius periculis his, duo an dicunt nostrud deleniti.
 
-			<li>
-				<h1>Sumo Summo</h1>
-				Ex nostrud verterem mea, duo no delicata neglegentur. Audire integre rationibus ut pri, ex cibo oblique euismod sit, cibo iracundia vix at. Legimus torquatos definiebas an nec, mazim postulant at sit. Ne qui quando vocent accusata, nam tritani fierent no. Ea per vocent voluptatibus.
+                        Modo affert expetenda per ne. Et dolore platonem appellantur cum. Constituam adversarium in sit, mea ne porro vitae, eu pri modus dicam quaeque. At nibh brute sonet sea. Mei simul disputando eu, id vis esse explicari dissentiet, ei agam volutpat usu. Ex vis tollit mollis oportere, mei probatus qualisque te. Mei labore voluptaria ex, mei graeci feugiat definiebas eu.
+                    </li>
 
-				Animal petentium patrioque id eos, et vis delenit reprimique. Vix clita essent expetenda et, duo in soleat graeci complectitur. Sit lorem vitae iudicabit in, malorum discere ne ius. Est eu adhuc blandit, ne copiosae placerat persequeris vim.
-			</li>
+                    <li>
+                        <h1>Fastidii Electram</h1>
+                        Vel adipisci suscipiantur te, nam ullum perfecto ut. Vitae contentiones id sed. Est vitae ponderum facilisis in. Quo illud eligendi similique et, odio detraxit pertinacia ea vix.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Mea Ludico</h1>
+                        Cetero perpetua ius at, et feugait nostrum sit, mea ne quaeque fastidii electram. Delenit torquatos adipiscing vix ex. Viris tamquam postulant ei mel, ea singulis corrumpit democritum vim. No fierent salutatus vel, in persecuti vituperata eos, at nusquam perpetua hendrerit est. Ne pri odio option nusquam, sed natum admodum eleifend at. Sea putant malorum scripserit ut, ei duo prima eleifend, ea mea agam diceret inciderint.
+                    </li>
 
-			<li>
-				<h1>Impetus Accusata</h1>
-				Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
-			</li>
+                    <li>
+                        <h1>Impetus Accusata</h1>
+                        Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
+                    </li>
 
-			<li>
-				<h1>Viderer Voluptua</h1>
-				Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
-			</li>
-		</ul>
-	</div>
+                    <li>
+                        <h1>Viderer Voluptua</h1>
+                        Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Morbiso</h1>
+                        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                    </li>
+
+                    <li>
+                        <h1>Sumo Summo</h1>
+                        Ex nostrud verterem mea, duo no delicata neglegentur. Audire integre rationibus ut pri, ex cibo oblique euismod sit, cibo iracundia vix at. Legimus torquatos definiebas an nec, mazim postulant at sit. Ne qui quando vocent accusata, nam tritani fierent no. Ea per vocent voluptatibus.
+
+                        Animal petentium patrioque id eos, et vis delenit reprimique. Vix clita essent expetenda et, duo in soleat graeci complectitur. Sit lorem vitae iudicabit in, malorum discere ne ius. Est eu adhuc blandit, ne copiosae placerat persequeris vim.
+                    </li>
+
+                    <li>
+                        <h1>Parabou Tras</h1>
+                        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                    </li>
+
+                    <li>
+                        <h1>Vix Clita</h1>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                    </li>
+                </ul>       
+            </div>
+        </div>
+
+        <!-- Sample code block -->
+        <div>    
+            <hr class="seperator">
+
+            <!-- Example header and explanation -->
+            <div class="text-center">
+                <h2>Fitted Boardz</h2>
+                <p>Stretched version of the example above. By just adding the class <code>fitted</code> to the <code>div</code> 
+                    of the Boardz element, such as <code>&lt;div class="boardz fitted"&gt;</code>, the Boardz object justifies the columns vertically, 
+                    making the whole board looking more like a rectangle.  </p>
+            </div>
+
+            <hr class="seperator fifty-percent">
+
+            <!-- Example Boardz element. -->
+            <div class="boardz centered-block fitted">
+                <ul>
+                    <li>
+                        <h1>Ex Nostrud</h1>
+                        Lorem ipsum dolor sit amet, et primis ornatus usu, eum ei graeci regione adipiscing. Eu primis nominavi ius, case facete eum at. In per summo sanctus, mea at tamquam nostrud luptatum, alienum convenire per te. Ei vel diceret complectitur. His choro accusam gubergren et.
+
+                        Cu tale saperet sed. Impetus accusata assentior id vel, tantas admodum mel ad. Sed eruditi sanctus fabellas cu, quas alienum sea ea. Cu vero munere disputationi sed, eruditi offendit his ne. Pri ad dolores laboramus.Vix ut affert civibus petentium, has clita dolorum id, an ius odio alia. An mel elitr scaevola adversarium, nibh dissentias inciderint nec ea. Purto integre ex his. Dolor nonumy docendi ad duo.
+                    </li>
+
+                    <li>
+                        <h1>Audire Integre </h1>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Eruditi</h1>
+                        Lorem ipsum dolor sit amet, te ius feugait persecuti, eirmod tritani ad pro. Copiosae expetendis per no. Nec no enim solum inermis. Minim insolens instructior ne ius, nulla eruditi eam no. Et quo aeterno persecuti disputando, adhuc accusam sea no, an brute justo debitis quo. At eos ipsum putent.
+                    </li>
+
+                    <li>
+                        <h1>Constituam Adversarium</h1>*
+                        Cu simul oratio indoctum nam, cu offendit moderatius mel. Sea eu euismod consulatu, usu cu audiam perpetua, viris philosophia vis et. Cu sit tibique intellegam, error ludus scripta pri et. His congue aliquam iracundia ei. Has idque fastidii id, mucius erroribus vel ad. Ut posse albucius periculis his, duo an dicunt nostrud deleniti.
+
+                        Modo affert expetenda per ne. Et dolore platonem appellantur cum. Constituam adversarium in sit, mea ne porro vitae, eu pri modus dicam quaeque. At nibh brute sonet sea. Mei simul disputando eu, id vis esse explicari dissentiet, ei agam volutpat usu. Ex vis tollit mollis oportere, mei probatus qualisque te. Mei labore voluptaria ex, mei graeci feugiat definiebas eu.
+                    </li>
+
+                    <li>
+                        <h1>Fastidii Electram</h1>
+                        Vel adipisci suscipiantur te, nam ullum perfecto ut. Vitae contentiones id sed. Est vitae ponderum facilisis in. Quo illud eligendi similique et, odio detraxit pertinacia ea vix.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Mea Ludico</h1>
+                        Cetero perpetua ius at, et feugait nostrum sit, mea ne quaeque fastidii electram. Delenit torquatos adipiscing vix ex. Viris tamquam postulant ei mel, ea singulis corrumpit democritum vim. No fierent salutatus vel, in persecuti vituperata eos, at nusquam perpetua hendrerit est. Ne pri odio option nusquam, sed natum admodum eleifend at. Sea putant malorum scripserit ut, ei duo prima eleifend, ea mea agam diceret inciderint.
+                    </li>
+
+                    <li>
+                        <h1>Impetus Accusata</h1>
+                        Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
+                    </li>
+
+                    <li>
+                        <h1>Viderer Voluptua</h1>
+                        Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h1>Morbiso</h1>
+                        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                    </li>
+
+                    <li>
+                        <h1>Sumo Summo</h1>
+                        Ex nostrud verterem mea, duo no delicata neglegentur. Audire integre rationibus ut pri, ex cibo oblique euismod sit, cibo iracundia vix at. Legimus torquatos definiebas an nec, mazim postulant at sit. Ne qui quando vocent accusata, nam tritani fierent no. Ea per vocent voluptatibus.
+
+                        Animal petentium patrioque id eos, et vis delenit reprimique. Vix clita essent expetenda et, duo in soleat graeci complectitur. Sit lorem vitae iudicabit in, malorum discere ne ius. Est eu adhuc blandit, ne copiosae placerat persequeris vim.
+                    </li>
+
+                    <li>
+                        <h1>Parabou Tras</h1>
+                        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                    </li>
+
+                    <li>
+                        <h1>Vix Clita</h1>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                    </li>
+                </ul>       
+            </div>
+        </div>
+
+        <!-- Sample code block -->
+        <div>    
+            <hr class="seperator">
+
+            <!-- Example header and explanation -->
+            <div class="text-center">
+                <h2>Image Boardz</h2>
+                <p><strong>Boardz</strong> can be used with images as well. Below is an example Boardz that mixes image and text cells.</p>
+            </div>
+
+            <hr class="seperator fifty-percent">
+
+            <!-- Example Boardz element. -->
+            <div class="boardz centered-block">
+                <ul>
+                    <li>
+                        <img src="http://kingofwallpapers.com/poster/poster-003.jpg" />
+                    </li>
+
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/13/ec/9d/13ec9d9199c90d253fe71ccd42cfad72.jpg" />
+                    </li>
+
+                    <li>
+                        <img src="http://cdn3.volusion.com/prakm.mcyzp/v/vspfiles/photos/TWAMBLUE-2.jpg" />
+                    </li>
+                    <li>
+                        <img src="http://wpmedia.ottawacitizen.com/2015/11/01.jpg?quality=55&strip=all&w=840&h=630&crop=1" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="http://www.posterchild.com/thomself/smashingpumpkins-self.jpg" />
+                    </li>
+                    <li>
+                        <img src="http://www.jpl.nasa.gov/visions-of-the-future/images/enceladus-small.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/originals/87/16/8c/87168cbbf07cb54a9793bebaa20b1bde.jpg" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="http://images.fromupnorth.com/077/54a12d7458673.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/22/95/48/229548086245c332443109ca9f2e0890.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/e8/5f/e6/e85fe6cf9815c33aa93f1656623b4442.jpg" />
+                    </li>
+                </ul>      
+            </div>
+        </div>
+
+        <!-- Sample code block -->
+        <div>    
+            <hr class="seperator">
+
+            <!-- Example header and explanation -->
+            <div class="text-center">
+                <h2>Beautiful Boardz</h2>
+                <p><strong>Boardz</strong> is highly customizable. In order to demonstrate this, a simple `beautiful` mode is included in the library. 
+                By just adding the class <code>beautiful</code> to the main Boardz wrapper, e.g. <code>&lt;div class="boardz beautiful"&gt;</code>, 
+                the following board can be achieved.</p>
+            </div>
+
+            <hr class="seperator fifty-percent">
+
+            <!-- Example Boardz element. -->
+            <div class="boardz centered-block beautiful">
+                <ul>
+                    <li>
+                        <img src="http://kingofwallpapers.com/poster/poster-003.jpg" />
+                    </li>
+
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/8c/ee/ff/8ceeff967c03c7cf4f86391dd6366544.jpg" />
+                    </li>
+
+                    <li>
+                        <img src="http://cdn3.volusion.com/prakm.mcyzp/v/vspfiles/photos/TWAMBLUE-2.jpg" />
+                    </li>
+                    <li>
+                        <img src="http://wpmedia.ottawacitizen.com/2015/11/01.jpg?quality=55&strip=all&w=840&h=630&crop=1" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="http://www.posterchild.com/thomself/smashingpumpkins-self.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/01572a12416945.56268b419350d.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/originals/87/16/8c/87168cbbf07cb54a9793bebaa20b1bde.jpg" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="http://images.fromupnorth.com/077/54a12d7458673.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/22/95/48/229548086245c332443109ca9f2e0890.jpg" />
+                    </li>
+                    <li>
+                        <img src="https://inspirationfeeed.files.wordpress.com/2014/01/ca402f7410884454ec5c303336e8591d1.jpg" />
+                    </li>
+                </ul>      
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h2>Fitted Boardz</h2>
+            <p>Stretched version of the example above. By just adding the class <code>fitted</code> to the <code>div</code> 
+                of the Boardz element, such as <code>&lt;div class="boardz fitted"&gt;</code>, the Boardz object justifies the columns vertically, 
+                making the whole board looking more like a rectangle.  </p>
+        </div>
+
+
+    </div>
 </body>
 </html>

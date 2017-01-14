@@ -1,7 +1,16 @@
-body {
-	font-family: 'Raleway', sans-serif;
+
+
+p {
+    letter-spacing: .01em;
+    font-size: 1.5em;
+    font-weight: 400;
+
 }
 
+h2 {
+	font-size: 5vh;
+	font-weight: 400;
+}
 .page-header {
 	display: flex;
 	flex-direction: column;
@@ -21,4 +30,21 @@ body {
 .seperator {
 	margin-top: 5vh;
 	margin-bottom: 5vh;
+}
+
+
+.centered-block {
+	margin: auto;
+}
+
+.fifty-percent {
+	width: 50%;
+}
+
+.seventyfive-percent {
+	width: 75%;
+}
+
+.hundred-percent {
+	width: 100%;
 }
