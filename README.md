@@ -44,9 +44,9 @@ In order to use Boardz, just wrap your unordered list with a div of class `board
 ##Available Classes
 There are three main classes that can be given to a **Boardz** element. The `boardz` class is necessary on the wrapper `div`, and the other two are optional. Note that, all of these classes should be used on the wrapper div, e.g. `<div class="boardz beautiful">`.
 
-`boardz`: This is the class that needs to be on the wrapper div.
-`fitted`: This is the class to make columns justified vertically.
-`beautiful`: This is the class to make stylish cells.
+`boardz`: This is the class that needs to be on the wrapper div.   
+`fitted`: This is the class to make columns justified vertically.   
+`beautiful`: This is the class to make stylish cells.   
 
 ##Why does it exist?
 We are trying to build more interactive and fancy interfaces everyday, and the web pages are getting bigger and bigger in terms of file sizes. I like simple interfaces with clear intentions and because of this, usually, I am trying to use small libraries wherever possible. A few days ago, I read [the great Medium article of Ohans Emmanuel on CSS Flexbox](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af) and decided to implement a simple Pinterest-like card-board library by using pure CSS and Flexbox, which I was thinking of using for a new project, while keeping the file size at minimum. Turns out that Flexbox makes things incredibly simple and is a nice step for building more responsive web pages. 
