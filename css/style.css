@@ -1,55 +1,42 @@
-
-
 p {
     letter-spacing: .01em;
     font-size: 1.5em;
     font-weight: 400;
-
 }
-
-.available-classes ul{
-	letter-spacing: .01em;
+.available-classes ul {
+    letter-spacing: .01em;
     font-size: 1.5em;
     font-weight: 400;
 }
-
 h2 {
-	font-size: 5vh;
-	font-weight: 400;
+    font-size: 5vh;
+    font-weight: 400;
 }
 .page-header {
-	display: flex;
-	flex-direction: column;
-	font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
 }
-
 .subheader {
-	font-size: 4vh;
-	color: gray;
+    font-size: 4vh;
+    color: gray;
 }
-
 .text-center {
-	text-align: center;
+    text-align: center;
 }
-
 .seperator {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
-
 .centered-block {
-	margin: auto;
+    margin: auto;
 }
-
 .fifty-percent {
-	width: 50%;
+    width: 50%;
 }
-
 .seventyfive-percent {
-	width: 75%;
+    width: 75%;
 }
-
 .footer {
-	font-size: 0.8em;
-
+    font-size: 0.8em;
 }

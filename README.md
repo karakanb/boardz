@@ -39,6 +39,9 @@ In order to use Boardz, just wrap your unordered list with a div of class `board
     </ul>
 </div>
 ```
+
+You can grab [the minified version here](src/boardz.min.css) or [the beautiful version here](src/boardz.css). 
+
 ----------
 
 ##Available Classes
